@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header><h1>CSS Selectors - Part 2</h1></header>
+    <main>
+      <section>
+        <h2>Pseudo Elements</h2>
+        <p>
+          Pseudo Elements represent "parts" of elements, e.g. the first line of
+          a paragraph or content to be added before or after an element.
+        </p>
+        <h3>Examples</h3>
+        <p class="paragraph--decorated">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum in,
+          unde recusandae repellendus, neque cumque ipsum fugiat.
+        </p>
+        <p><a href="https://google.de">I am an external link!</a></p>
+        <p><a href="/contact">I am an internal link!</a></p>
+      </section>
+      <section>
+        <h2>Combinators</h2>
+        <p>
+          Combinators allow you to combine different types of selectors to be
+          more specific in what you select.
+        </p>
+        <h3>Examples</h3>
+        <p class="highlight">
+          I am a paragraph with <code>class="highlight"</code>
+        </p>
+        <div class="highlight">
+          I am a div with <code>class="highlight"</code>
+        </div>
+        <div>
+          <h3>I am a div with children</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+            accusamus eveniet ducimus ullam obcaecati sit officiis, ab delectus
+            ipsam!
+          </p>
+          <ul>
+            <li><p>I am a paragraph within a list</p></li>
+          </ul>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+            nobis, ullam officia facere, maiores ducimus iure dolore quisquam
+            atque deleniti inventore.
+          </p>
+          <button>I am a button following a paragraph</button>
+          <button>I am a button following a button</button>
+        </div>
+      </section>
+    </main>
+    <footer><a href="selectors-1.html">CSS Selectors - Part 1</a></footer>
+  </body>
+</html>
