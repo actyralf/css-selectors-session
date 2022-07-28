@@ -10,10 +10,58 @@ footer {
 
 /* Id Selector - try to avoid it! */
 
+#i-am-very-special {
+  color: chocolate;
+}
+
 /* Attribute selectors */
+[target] {
+  border: 2px solid blue;
+}
+[target="_blank"] {
+  border: 2px solid chocolate;
+}
+
+[type="password"] {
+  background-color: black;
+  color: white;
+}
 
 /* Pseudo Classes */
 
+button {
+  padding: 12px;
+  border: none;
+  background-color: chocolate;
+  color: white;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: rgb(148, 73, 20);
+}
+button:active {
+  background-color: rgb(77, 38, 10);
+}
+
 /* Pseudo Elements 🌍 */
 
+.paragraph--decorated::first-letter {
+  font-size: 2em;
+  color: chocolate;
+}
+
+a[href^="http"]::before {
+  content: "🌍";
+  margin-right: 4px;
+}
+
 /* Combinators */
+
+div > p {
+  color: chocolate;
+}
+
+p + button {
+  background-color: blue;
+}
